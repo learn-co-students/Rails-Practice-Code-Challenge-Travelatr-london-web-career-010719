@@ -1,0 +1,11 @@
+<h1> <%= @post.title %> </h1> 
+
+# content
+<p>  
+<%= @post.content %>
+</p>
+
+#link to author
+<%= link_to @post.blogger.name, blogger_path(@post.blogger.id) %>
+
+#like button
